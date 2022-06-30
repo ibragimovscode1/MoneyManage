@@ -38,11 +38,13 @@ extension LoginView {
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
         usernameTextField.placeholder = "Username"
         usernameTextField.delegate = self
+        usernameTextField.autocorrectionType = .no
         
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.placeholder = "Password"
         passwordTextField.delegate = self
         passwordTextField.isSecureTextEntry = true
+        usernameTextField.autocorrectionType = .no
         
         dividerView.translatesAutoresizingMaskIntoConstraints = false
         dividerView.backgroundColor = .secondarySystemFill
@@ -78,11 +80,7 @@ extension LoginView: UITextFieldDelegate {
         return true
     }
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if textField.text != "" {
-            return true
-        } else {
-            return false
-        }
+        return true
         
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
