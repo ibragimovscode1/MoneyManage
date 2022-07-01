@@ -23,7 +23,7 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemCyan
         style()
         layout()
     }
@@ -86,9 +86,10 @@ extension LoginVC {
             loginView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
             
             //Button
-            signInButton.topAnchor.constraint(equalTo: loginView.bottomAnchor, constant: 16),
+            signInButton.topAnchor.constraint(equalTo: loginView.bottomAnchor, constant: 24),
             signInButton.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
             signInButton.trailingAnchor.constraint(equalTo: loginView.trailingAnchor),
+            signInButton.heightAnchor.constraint(equalToConstant: 40),
             
             //Error Label
             errorMessageLabel.topAnchor.constraint(lessThanOrEqualToSystemSpacingBelow: signInButton.bottomAnchor, multiplier: 2),
