@@ -14,6 +14,7 @@
 		52208A29286CA0C000A523D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52208A27286CA0C000A523D6 /* LaunchScreen.storyboard */; };
 		52208A33286CA60C00A523D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52208A32286CA60C00A523D6 /* LoginView.swift */; };
 		523E07ED286EE5DC0046D9A1 /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */; };
+		523E07EF286F23F10046D9A1 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07EE286F23F10046D9A1 /* OnboardingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		52208A2A286CA0C000A523D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52208A32286CA60C00A523D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
+		523E07EE286F23F10046D9A1 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */,
+				523E07EE286F23F10046D9A1 /* OnboardingVC.swift */,
 			);
 			name = Onboarding;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				523E07ED286EE5DC0046D9A1 /* OnboardingContainerVC.swift in Sources */,
+				523E07EF286F23F10046D9A1 /* OnboardingVC.swift in Sources */,
 				52208A21286CA0BE00A523D6 /* LoginVC.swift in Sources */,
 				52208A1D286CA0BE00A523D6 /* AppDelegate.swift in Sources */,
 				52208A33286CA60C00A523D6 /* LoginView.swift in Sources */,
