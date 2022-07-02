@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 //        window?.rootViewController = LoginVC()
-//        window?.rootViewController = OnboardingContainerVC()
-        window?.rootViewController = OnboardingVC()
+        window?.rootViewController = OnboardingContainerVC()
+//        window?.rootViewController = OnboardingVC(heroImageName: "delorean", titleText: "Money Manage is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in 80s.")
         window?.makeKeyAndVisible()
     }
 
