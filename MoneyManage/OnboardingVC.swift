@@ -6,14 +6,17 @@
 //
 
 import UIKit
+
+
 class OnboardingVC: UIViewController {
-    
+ 
    
     let stackView = UIStackView()
     let imageView = UIImageView()
     let label = UILabel()
     let heroImageName: String
     let titleText: String
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

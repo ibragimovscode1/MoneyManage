@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  MoneyManage
 //
 //  Created by Rahmetullah on 29.06.2022.
@@ -7,12 +7,21 @@
 
 import UIKit
 
+protocol LoginVCDelegate: AnyObject {
+    func didLogin()
+}
+protocol logoutDelegate: AnyObject{
+    func didLogout()
+}
+
 class LoginVC: UIViewController {
     let titleLabel = UILabel()
     let subTitleLabel = UILabel()
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
+    weak var delegate: LoginVCDelegate?
+   
     
     var username: String? {
         return loginView.usernameTextField.text
@@ -26,6 +35,10 @@ class LoginVC: UIViewController {
         view.backgroundColor = .systemCyan
         style()
         layout()
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        signInButton.configuration?.showsActivityIndicator = false
     }
 
 
@@ -107,6 +120,7 @@ extension LoginVC {
     @objc func signInTapped() {
         errorMessageLabel.isHidden = true
         login()
+//        navigationController?.pushViewController(OnboardingContainerVC(), animated: true)
         
         
     }
@@ -115,12 +129,13 @@ extension LoginVC {
             assertionFailure("username / password should never be nil")
             return
         }
-        if username.isEmpty || password.isEmpty {
-            configureView(withMessage: "Username / password cannot be blank!")
-            return
-        }
-        if username == "Kenan" && password == "welcome" {
+//        if username.isEmpty || password.isEmpty {
+//            configureView(withMessage: "Username / password cannot be blank!")
+//            return
+//        }
+        if username == "" && password == "" {
             signInButton.configuration?.showsActivityIndicator = true
+            delegate?.didLogin()
             
         } else {
             configureView(withMessage: "Incorrect username / password")
