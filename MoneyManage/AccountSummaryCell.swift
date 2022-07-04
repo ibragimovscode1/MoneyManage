@@ -8,6 +8,23 @@
 import Foundation
 import UIKit
 class AccountSummaryCell: UITableViewCell {
+    
+    enum AccountType: String {
+        case Banking
+        case CreditCard
+        case Investment
+    }
+    struct ViewModel {
+        let accountType: AccountType
+        let accountName: String
+        let balance: Decimal
+        
+        var balanceAttributedString: NSAttributedString {
+            return CurrencyFormatter().makeAttributedCurrency(balance)
+        }
+    }
+    let viewModel: ViewModel? = nil
+    
     let typeLabel  = UILabel()
     let underlineView = UIView()
     let nameLabel = UILabel()
@@ -59,8 +76,7 @@ extension AccountSummaryCell {
             
             balanceAmount.translatesAutoresizingMaskIntoConstraints = false
             balanceAmount.textAlignment = .right
-//            balanceAmount.text = "$929,466.67"
-            balanceAmount.attributedText = makeFormattedBalance(dollars: "929,944", cents: "23")
+            balanceAmount.attributedText = makeFormattedBalance(dollars: "xxx,xxx", cents: "xxx")
             contentView.addSubview(balanceStackView)
             balanceStackView.addArrangedSubview(balanceLabel)
             balanceStackView.addArrangedSubview(balanceAmount)
@@ -112,8 +128,25 @@ extension AccountSummaryCell {
             return rootString
         }
     
-
-  
-        
+}
+extension AccountSummaryCell {
+    func configure(with vm: ViewModel) {
+        typeLabel.text = vm.accountType.rawValue
+        nameLabel.text = vm.accountName
+        balanceAmount.attributedText = vm.balanceAttributedString
+        switch vm.accountType {
+            
+        case .Banking:
+            underlineView.backgroundColor = appColor
+            balanceLabel.text = "Currrent Balance"
+            
+        case .CreditCard:
+            underlineView.backgroundColor = .orange
+            balanceLabel.text = "Current Balance"
+        case .Investment:
+            underlineView.backgroundColor = .systemPurple
+            balanceLabel.text = "Value"
+        }
     }
+}
 
