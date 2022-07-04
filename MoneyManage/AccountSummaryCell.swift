@@ -17,7 +17,7 @@ class AccountSummaryCell: UITableViewCell {
     let balanceAmount = UILabel()
     let chevronImage = UIImageView()
     static let reuseID = "AccountSummaryCell"
-    static let rowHeight: CGFloat = 100
+    static let rowHeight: CGFloat = 112
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
@@ -59,7 +59,8 @@ extension AccountSummaryCell {
             
             balanceAmount.translatesAutoresizingMaskIntoConstraints = false
             balanceAmount.textAlignment = .right
-            balanceAmount.text = "$929,466.67"
+//            balanceAmount.text = "$929,466.67"
+            balanceAmount.attributedText = makeFormattedBalance(dollars: "929,944", cents: "23")
             contentView.addSubview(balanceStackView)
             balanceStackView.addArrangedSubview(balanceLabel)
             balanceStackView.addArrangedSubview(balanceAmount)
@@ -95,6 +96,24 @@ extension AccountSummaryCell {
                 
             ])
         }
+  
+        private func makeFormattedBalance(dollars: String, cents: String) -> NSMutableAttributedString {
+            let dollarSignAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .callout), .baselineOffset: 8]
+            let dollarAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .title1)]
+            let centAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .footnote), .baselineOffset: 8]
+            
+            let rootString = NSMutableAttributedString(string: "$", attributes: dollarSignAttributes)
+            let dollarString = NSAttributedString(string: dollars, attributes: dollarAttributes)
+            let centString = NSAttributedString(string: cents, attributes: centAttributes)
+            
+            rootString.append(dollarString)
+            rootString.append(centString)
+            
+            return rootString
+        }
+    
+
+  
         
     }
 
