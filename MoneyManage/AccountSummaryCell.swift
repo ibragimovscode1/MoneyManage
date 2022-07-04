@@ -1,0 +1,100 @@
+//
+//  AccountSummaryCell.swift
+//  MoneyManage
+//
+//  Created by Rahmetullah on 4.07.2022.
+//
+
+import Foundation
+import UIKit
+class AccountSummaryCell: UITableViewCell {
+    let typeLabel  = UILabel()
+    let underlineView = UIView()
+    let nameLabel = UILabel()
+    
+    let balanceStackView = UIStackView()
+    let balanceLabel = UILabel()
+    let balanceAmount = UILabel()
+    let chevronImage = UIImageView()
+    static let reuseID = "AccountSummaryCell"
+    static let rowHeight: CGFloat = 100
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setup()
+        layout()
+    }
+
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension AccountSummaryCell {
+        private func setup() {
+            typeLabel.translatesAutoresizingMaskIntoConstraints = false
+            typeLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
+            typeLabel.adjustsFontForContentSizeCategory = true
+            typeLabel.text = "Account Type"
+            contentView.addSubview(typeLabel)
+            
+            underlineView.translatesAutoresizingMaskIntoConstraints = false
+            underlineView.backgroundColor = appColor
+            contentView.addSubview(underlineView)
+            
+            nameLabel.translatesAutoresizingMaskIntoConstraints = false
+            nameLabel.adjustsFontForContentSizeCategory = true
+            nameLabel.text = "Account name"
+            nameLabel.font = UIFont.preferredFont(forTextStyle: .body)
+            contentView.addSubview(nameLabel)
+            
+            balanceStackView.translatesAutoresizingMaskIntoConstraints = false
+            balanceStackView.axis = .vertical
+            balanceStackView.spacing = 0
+            
+            balanceLabel.translatesAutoresizingMaskIntoConstraints = false
+            balanceLabel.font = UIFont.preferredFont(forTextStyle: .body)
+            balanceLabel.textAlignment = .right
+            balanceLabel.text = "Some balance"
+            
+            balanceAmount.translatesAutoresizingMaskIntoConstraints = false
+            balanceAmount.textAlignment = .right
+            balanceAmount.text = "$929,466.67"
+            contentView.addSubview(balanceStackView)
+            balanceStackView.addArrangedSubview(balanceLabel)
+            balanceStackView.addArrangedSubview(balanceAmount)
+            
+            chevronImage.translatesAutoresizingMaskIntoConstraints = false
+            let chevronImageView = UIImage(systemName: "chevron.right")!.withTintColor(appColor,renderingMode: .alwaysOriginal)
+            chevronImage.image = chevronImageView
+            contentView.addSubview(chevronImage)
+            
+        }
+        private func layout() {
+            NSLayoutConstraint.activate([
+                typeLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+                typeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+                
+                
+                underlineView.topAnchor.constraint(equalTo: typeLabel.bottomAnchor, constant: 8),
+                underlineView.leadingAnchor.constraint(equalTo: typeLabel.leadingAnchor),
+                underlineView.heightAnchor.constraint(equalToConstant: 4),
+                underlineView.widthAnchor.constraint(equalToConstant: 60),
+                
+                nameLabel.topAnchor.constraint(equalTo: underlineView.bottomAnchor, constant: 16),
+                nameLabel.leadingAnchor.constraint(equalTo: underlineView.leadingAnchor),
+                
+                balanceStackView.topAnchor.constraint(equalTo: underlineView.bottomAnchor),
+                balanceStackView.leadingAnchor.constraint(equalTo: nameLabel.trailingAnchor, constant: 4),
+                balanceStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
+                
+                chevronImage.topAnchor.constraint(equalTo: underlineView.bottomAnchor,constant: 8),
+                chevronImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
+                
+                
+                
+            ])
+        }
+        
+    }
+

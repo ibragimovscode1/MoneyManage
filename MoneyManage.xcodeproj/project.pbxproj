@@ -21,6 +21,7 @@
 		523E07ED286EE5DC0046D9A1 /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */; };
 		523E07EF286F23F10046D9A1 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07EE286F23F10046D9A1 /* OnboardingVC.swift */; };
 		523E07F32870A9F30046D9A1 /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07F22870A9F30046D9A1 /* DummyVC.swift */; };
+		52BB03C22872E56F0023683B /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB03C12872E56F0023683B /* AccountSummaryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
 		523E07EE286F23F10046D9A1 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		523E07F22870A9F30046D9A1 /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
+		52BB03C12872E56F0023683B /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				5201DCD328720A9800EC9AE6 /* AccountSummaryVC.swift */,
-				523DD59F2872CA2700ED50CF /* AcoountSummaryHeaderView.swift */,
-				523DD5A12872CA7B00ED50CF /* AccountSummaryHeaderView.xib */,
+				52BB03BF2872E4E50023683B /* Header */,
+				52BB03C02872E5150023683B /* Cells */,
 			);
 			name = AccountSummary;
 			sourceTree = "<group>";
@@ -129,6 +131,23 @@
 				523E07EE286F23F10046D9A1 /* OnboardingVC.swift */,
 			);
 			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		52BB03BF2872E4E50023683B /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				523DD59F2872CA2700ED50CF /* AcoountSummaryHeaderView.swift */,
+				523DD5A12872CA7B00ED50CF /* AccountSummaryHeaderView.xib */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		52BB03C02872E5150023683B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52BB03C12872E56F0023683B /* AccountSummaryCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +227,7 @@
 				523DD5A02872CA2700ED50CF /* AcoountSummaryHeaderView.swift in Sources */,
 				523E07F32870A9F30046D9A1 /* DummyVC.swift in Sources */,
 				523E07EF286F23F10046D9A1 /* OnboardingVC.swift in Sources */,
+				52BB03C22872E56F0023683B /* AccountSummaryCell.swift in Sources */,
 				5201DCD12871CAE800EC9AE6 /* MainVC.swift in Sources */,
 				52208A21286CA0BE00A523D6 /* LoginVC.swift in Sources */,
 				52208A1D286CA0BE00A523D6 /* AppDelegate.swift in Sources */,
