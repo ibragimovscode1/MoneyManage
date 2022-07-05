@@ -21,8 +21,10 @@
 		523E07ED286EE5DC0046D9A1 /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */; };
 		523E07EF286F23F10046D9A1 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07EE286F23F10046D9A1 /* OnboardingVC.swift */; };
 		523E07F32870A9F30046D9A1 /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07F22870A9F30046D9A1 /* DummyVC.swift */; };
+		52AB8AE528742D1B005D720E /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8AE428742D1B005D720E /* NSNotificationName.swift */; };
+		52AB8AE7287433C3005D720E /* UITextfield+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8AE6287433C3005D720E /* UITextfield+SecureToggle.swift */; };
 		52BB03C22872E56F0023683B /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB03C12872E56F0023683B /* AccountSummaryCell.swift */; };
-		52BB03C4287335580023683B /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB03C3287335580023683B /* DecimalUtils.swift */; };
+		52BB03C4287335580023683B /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB03C3287335580023683B /* Decimal+Utils.swift */; };
 		52BB03C6287335E30023683B /* CurrencyFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB03C5287335E30023683B /* CurrencyFormater.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +45,10 @@
 		523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
 		523E07EE286F23F10046D9A1 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		523E07F22870A9F30046D9A1 /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
+		52AB8AE428742D1B005D720E /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
+		52AB8AE6287433C3005D720E /* UITextfield+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+SecureToggle.swift"; sourceTree = "<group>"; };
 		52BB03C12872E56F0023683B /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
-		52BB03C3287335580023683B /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
+		52BB03C3287335580023683B /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		52BB03C5287335E30023683B /* CurrencyFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,10 +66,12 @@
 		5201DCCB2871C00B00EC9AE6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				5201DCCC2871C05500EC9AE6 /* LocalState.swift */,
 				5201DCCE2871C8AA00EC9AE6 /* UIViewController+Utilities.swift */,
-				52BB03C3287335580023683B /* DecimalUtils.swift */,
+				52BB03C3287335580023683B /* Decimal+Utils.swift */,
+				52AB8AE6287433C3005D720E /* UITextfield+SecureToggle.swift */,
+				5201DCCC2871C05500EC9AE6 /* LocalState.swift */,
 				52BB03C5287335E30023683B /* CurrencyFormater.swift */,
+				52AB8AE428742D1B005D720E /* NSNotificationName.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -231,9 +237,11 @@
 				523E07ED286EE5DC0046D9A1 /* OnboardingContainerVC.swift in Sources */,
 				5201DCD428720A9800EC9AE6 /* AccountSummaryVC.swift in Sources */,
 				5201DCCD2871C05500EC9AE6 /* LocalState.swift in Sources */,
+				52AB8AE7287433C3005D720E /* UITextfield+SecureToggle.swift in Sources */,
 				523DD5A02872CA2700ED50CF /* AcoountSummaryHeaderView.swift in Sources */,
 				523E07F32870A9F30046D9A1 /* DummyVC.swift in Sources */,
-				52BB03C4287335580023683B /* DecimalUtils.swift in Sources */,
+				52BB03C4287335580023683B /* Decimal+Utils.swift in Sources */,
+				52AB8AE528742D1B005D720E /* NSNotificationName.swift in Sources */,
 				523E07EF286F23F10046D9A1 /* OnboardingVC.swift in Sources */,
 				52BB03C22872E56F0023683B /* AccountSummaryCell.swift in Sources */,
 				5201DCD12871CAE800EC9AE6 /* MainVC.swift in Sources */,

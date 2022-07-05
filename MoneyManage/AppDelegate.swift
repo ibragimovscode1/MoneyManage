@@ -25,8 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .systemBackground
         loginVC.delegate = self
         onboardingVC.delegate = self
+        registerNotifications()
         displayLogin()
         return true
+    }
+    private func registerNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didLogout), name: .Logout, object: nil)
     }
     private func displayLogin() {
         setRootViewController(loginVC)
@@ -83,7 +87,7 @@ extension AppDelegate: OnboardingVCDelegate {
 }
 
 extension AppDelegate: logoutDelegate {
-    func didLogout() {
+   @objc func didLogout() {
         setRootViewController(loginVC)
     }
     
