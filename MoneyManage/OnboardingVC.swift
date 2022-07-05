@@ -20,7 +20,7 @@ class OnboardingVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = appColor
         style()
         layout()
         
