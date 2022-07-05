@@ -23,6 +23,7 @@
 		523E07F32870A9F30046D9A1 /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07F22870A9F30046D9A1 /* DummyVC.swift */; };
 		52AB8AE528742D1B005D720E /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8AE428742D1B005D720E /* NSNotificationName.swift */; };
 		52AB8AE7287433C3005D720E /* UITextfield+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8AE6287433C3005D720E /* UITextfield+SecureToggle.swift */; };
+		52AB8AEA28746D34005D720E /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8AE928746D34005D720E /* ShakeyBellView.swift */; };
 		52BB03C22872E56F0023683B /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB03C12872E56F0023683B /* AccountSummaryCell.swift */; };
 		52BB03C4287335580023683B /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB03C3287335580023683B /* Decimal+Utils.swift */; };
 		52BB03C6287335E30023683B /* CurrencyFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB03C5287335E30023683B /* CurrencyFormater.swift */; };
@@ -47,6 +48,7 @@
 		523E07F22870A9F30046D9A1 /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
 		52AB8AE428742D1B005D720E /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		52AB8AE6287433C3005D720E /* UITextfield+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+SecureToggle.swift"; sourceTree = "<group>"; };
+		52AB8AE928746D34005D720E /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		52BB03C12872E56F0023683B /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		52BB03C3287335580023683B /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		52BB03C5287335E30023683B /* CurrencyFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormater.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				523E07EB286EE59C0046D9A1 /* Onboarding */,
 				5201DCD228720A3D00EC9AE6 /* AccountSummary */,
 				5201DCCB2871C00B00EC9AE6 /* Utilities */,
+				52AB8AE828746CF7005D720E /* Components */,
 				52208A30286CA31C00A523D6 /* Files */,
 			);
 			path = MoneyManage;
@@ -143,6 +146,14 @@
 				523E07EE286F23F10046D9A1 /* OnboardingVC.swift */,
 			);
 			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		52AB8AE828746CF7005D720E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				52AB8AE928746D34005D720E /* ShakeyBellView.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 		52BB03BF2872E4E50023683B /* Header */ = {
@@ -243,6 +254,7 @@
 				52BB03C4287335580023683B /* Decimal+Utils.swift in Sources */,
 				52AB8AE528742D1B005D720E /* NSNotificationName.swift in Sources */,
 				523E07EF286F23F10046D9A1 /* OnboardingVC.swift in Sources */,
+				52AB8AEA28746D34005D720E /* ShakeyBellView.swift in Sources */,
 				52BB03C22872E56F0023683B /* AccountSummaryCell.swift in Sources */,
 				5201DCD12871CAE800EC9AE6 /* MainVC.swift in Sources */,
 				52208A21286CA0BE00A523D6 /* LoginVC.swift in Sources */,
