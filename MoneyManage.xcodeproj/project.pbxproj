@@ -16,6 +16,8 @@
 		52208A26286CA0C000A523D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52208A25286CA0C000A523D6 /* Assets.xcassets */; };
 		52208A29286CA0C000A523D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52208A27286CA0C000A523D6 /* LaunchScreen.storyboard */; };
 		52208A33286CA60C00A523D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52208A32286CA60C00A523D6 /* LoginView.swift */; };
+		523A2D172875B7CF001FCBAE /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A2D162875B7CF001FCBAE /* SkeletonLoadable.swift */; };
+		523A2D192875B8ED001FCBAE /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A2D182875B8ED001FCBAE /* SkeletonCell.swift */; };
 		523DD5A02872CA2700ED50CF /* AcoountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523DD59F2872CA2700ED50CF /* AcoountSummaryHeaderView.swift */; };
 		523DD5A22872CA7B00ED50CF /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523DD5A12872CA7B00ED50CF /* AccountSummaryHeaderView.xib */; };
 		523E07ED286EE5DC0046D9A1 /* OnboardingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */; };
@@ -43,6 +45,8 @@
 		52208A28286CA0C000A523D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52208A2A286CA0C000A523D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52208A32286CA60C00A523D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		523A2D162875B7CF001FCBAE /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
+		523A2D182875B8ED001FCBAE /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		523DD59F2872CA2700ED50CF /* AcoountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcoountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		523DD5A12872CA7B00ED50CF /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 		523E07EC286EE5DC0046D9A1 /* OnboardingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerVC.swift; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				52BB03C12872E56F0023683B /* AccountSummaryCell.swift */,
+				523A2D162875B7CF001FCBAE /* SkeletonLoadable.swift */,
+				523A2D182875B8ED001FCBAE /* SkeletonCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52BB03C6287335E30023683B /* CurrencyFormater.swift in Sources */,
+				523A2D192875B8ED001FCBAE /* SkeletonCell.swift in Sources */,
 				5254CC832874AC79006BFB6A /* Date+Utils.swift in Sources */,
 				523E07ED286EE5DC0046D9A1 /* OnboardingContainerVC.swift in Sources */,
 				5201DCD428720A9800EC9AE6 /* AccountSummaryVC.swift in Sources */,
@@ -268,6 +275,7 @@
 				52208A21286CA0BE00A523D6 /* LoginVC.swift in Sources */,
 				52208A1D286CA0BE00A523D6 /* AppDelegate.swift in Sources */,
 				5201DCCF2871C8AA00EC9AE6 /* UIViewController+Utilities.swift in Sources */,
+				523A2D172875B7CF001FCBAE /* SkeletonLoadable.swift in Sources */,
 				52208A33286CA60C00A523D6 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
